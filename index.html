@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2"><meta name="description" content="Your calm, interactive Maths SFM-I exam checklist.">
+  <title>Maths SFM-I | Exam checklist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar"><a class="brand" href="#top"><span class="brand-icon">∑</span><span>STUDY<span class="brand-muted">SPACE</span></span></a><span class="term-tag"><i></i> SEMESTER 01</span><button class="reset-button" id="resetBtn" title="Reset all progress">Reset progress</button></header>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy"><p class="eyebrow">YOUR EXAM, IN FOCUS <span class="eyebrow-line"></span></p><h1>One topic at<br> a time<span class="period">.</span></h1><p class="hero-sub">A clear path through Maths SFM-I.<br>Keep going — every tick is progress.</p><button class="continue-btn" id="continueBtn">Pick up where I left off <span>↗</span></button></div>
+        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-core">∫</div><span class="math-float float-one">σ²</span><span class="math-float float-two">∑ xᵢ</span><span class="math-float float-three">P(A)</span><span class="math-float float-four">n → ∞</span><span class="spark spark-one">✳</span><span class="spark spark-two">+</span></div>
+        <div class="hero-counter"><strong id="heroPercent">0%</strong><span>SYLLABUS<br>COMPLETE</span></div>
+      </section>
+      <section class="progress-card" aria-label="Study progress"><div class="progress-top"><div><p class="eyebrow">YOUR PROGRESS</p><h2><span id="doneCount">0</span><span class="slash"> / </span><span id="totalCount">0</span> topics complete</h2></div><div class="progress-note"><span class="progress-dot"></span><span id="progressMessage">A fresh start. You’ve got this.</span></div></div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><div class="progress-bottom"><span>JUST STARTING</span><span>KEEP IT UP</span><span>ALMOST THERE</span><span>YOU DID IT</span></div></section>
+      <section class="study-area"><div class="section-heading"><div><p class="eyebrow">THE ROADMAP</p><h2>Your topics</h2></div><div class="topic-tools"><label class="search-box"><span>⌕</span><input type="search" id="searchInput" placeholder="Find a topic…" aria-label="Find a topic"></label><select id="filterSelect" aria-label="Filter topics"><option value="all">All topics</option><option value="todo">To do</option><option value="done">Completed</option></select></div></div><div class="unit-list" id="unitList"></div></section>
+      <section class="closing-note"><span class="note-mark">✳</span><p>Small steps add up. <strong>You’re doing better than you think.</strong></p><span class="note-equation">∫ progress = success</span></section>
+    </main>
+    <footer><span>MADE FOR YOUR NEXT BIG STEP</span><span>MATHS SFM-I <b>·</b> SEMESTER 01</span></footer>
+  </div>
+  <button class="chat-launcher" id="chatLauncher" aria-label="Open study helper"><span class="chat-launcher-icon">✳</span><span class="chat-label">Ask Study Buddy</span><span class="chat-ping"></span></button>
+  <aside class="chat-panel" id="chatPanel" aria-label="Study Buddy" aria-hidden="true"><div class="chat-head"><div class="buddy-avatar">✳</div><div class="buddy-title"><strong>Study Buddy</strong><span><i></i> Here to help you revise</span></div><button class="chat-close" id="chatClose" aria-label="Close chat">×</button></div><div class="chat-context">I know your SFM-I checklist. Ask me about a topic, your progress, or what to study next.</div><div class="chat-messages" id="chatMessages" aria-live="polite"><div class="message bot-message">Hey! 👋 Ready when you are. Ask me about any topic, or try one of these:</div><div class="quick-prompts"><button data-prompt="What should I study next?">What next?</button><button data-prompt="Show my progress">My progress</button><button data-prompt="Explain Fermat's little theorem">Fermat's little theorem</button></div></div><form class="chat-form" id="chatForm"><input id="chatInput" type="text" placeholder="Ask a study question…" autocomplete="off" aria-label="Ask a study question"><button aria-label="Send message">↑</button></form><p class="chat-footnote">A friendly checklist guide · answers are built in</p></aside>
+  <script src="app.js"></script>
+</body>
+</html>
