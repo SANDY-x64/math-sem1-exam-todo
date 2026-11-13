@@ -2,6 +2,7 @@
   "name": "math-sem1-exam-todo",
   "version": "1.0.0",
   "private": true,
-  "description": "An interactive SFM-I exam checklist with a study helper.",
+  "description": "An interactive SEM-I exam checklist with a study helper.",
   "scripts": { "start": "npx serve ." }
 }
+
